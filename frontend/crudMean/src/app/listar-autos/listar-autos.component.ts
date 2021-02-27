@@ -31,12 +31,12 @@ export class ListarAutosComponent implements OnInit {
 
 
   eliminar(autoSelect: any) {
-    console.log("ingresó")
+    // console.log("ingresó")
     this.auto.eliminarAuto(autoSelect).subscribe(
       (res) => {
         const index = this.lista.indexOf(autoSelect)
         if (index > -1) {
-          this.lista.splace(index, 1);
+          this.lista.splice(index, 1);
         }
       },
       (err) => {

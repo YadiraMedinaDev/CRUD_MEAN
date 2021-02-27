@@ -16,13 +16,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http'
 
 //Servicio
-import { AutosService } from './autos.service'
+import { AutosService } from './autos.service';
+import { ActualizarAutosComponent } from './actualizar-autos/actualizar-autos.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ListarAutosComponent,
-    CrearAutosComponent
+    CrearAutosComponent,
+    ActualizarAutosComponent
   ],
   imports: [
     BrowserModule,
